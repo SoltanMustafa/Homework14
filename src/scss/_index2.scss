@@ -1,0 +1,90 @@
+.tabmenu-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    .tabmenu{
+        width: 100%;
+        height: 100%;
+        .tabmenu-text{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: rgb(242, 0, 125);
+            border-bottom: 10px solid rgb(37, 159, 246);
+            h1{
+                width: 100%;
+                color: #fff;
+                margin-bottom: 20px;
+                padding-top: 10px;
+                font-size: 50px;
+                text-align: center;
+                text-shadow: 3px 3px 3px #000;
+            }
+            p{
+                width: 100%;
+                height: auto;
+                text-align: center;
+                color: #fff;
+                font-size: 35px;
+                margin-bottom: 20px;
+                letter-spacing: 2px;
+                text-shadow: 2px 2px 2px #000;
+            }
+        }
+        .menu-header{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            div{
+                width: 20%;
+                padding: 30px 10px;
+                text-align: center;
+                font-size: 35px;
+                font-weight: 700;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                background-color: #d8e2ea;
+                color: #007aff;
+                letter-spacing: 3px;
+                text-shadow: 2px 2px 2px #fffdfd,
+                -2px -2px 2px #ffffff;
+                cursor: pointer;
+            }
+            .active{
+                background-color: rgb(232 96 76);
+                color: #ffffff;
+                text-shadow: 1px 1px 1px #000,
+                -1px -1px 1px #000;
+            }
+        }
+        .menu-content{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border-top: 10px solid rgb(37, 159, 246);
+            div{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 10px solid rgb(37, 159, 246);
+                display: none;
+                iframe{
+                    border-left: 10px solid rgb(37, 159, 246);
+                    border-right: 10px solid rgb(37, 159, 246);
+                }
+            }
+            .show{
+                display: flex !important;
+            }
+        }
+    }
+}
